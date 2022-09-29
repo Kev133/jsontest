@@ -24,13 +24,13 @@ plt.plot(skut,marker="o",mfc="black")
 #plt.show()
 print(namer)
 print(skut)
-print(konvoluce)
 #zkouska nástřelu, jenze jaka optimalizacni funkce?
 nastrel=[1,1,1,1,1,1]
 test1=list(np.convolve(fakesonda,nastrel))
 print(test1)
 
 
-
+neco=scipy.signal.deconvolve(namer,sonda)
+print(neco)
 
 # print(json.dumps(dict,indent=4,sort_keys=True))
